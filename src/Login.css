@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+	font-family: 'Courier New', Courier, monospace;
+	background: black;
+}
+
+.wrappers{
+	color: black;
+    background-color: skyblue;
+	height: 100vh;
+	padding: 50px 100px;
+}
+
+.wrappers .login{
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.wrappers .register{
+    text-align: center;
+	margin-bottom: 20px;
+	font-size: 40px;
+
+}
+
+.wrappers .input-box{
+    text-align: left;
+    margin: 0px 10px 0px 10px;
+}
+.wrappers input{
+	text-align: left;
+	margin: 10px 0px 10px 0px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+form .input-box{
+	text-align: center;
+}
+
+form .btn{
+	text-align: center;
+}
+
+.error {
+	color: red;
+    display: inline;
+    align-items: center;
+    font-size: large;
+    margin-bottom: 40px;
+}
+

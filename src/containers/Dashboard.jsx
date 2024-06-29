@@ -7,6 +7,7 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Container,
   Dialog,
   DialogActions,
   DialogContent,
@@ -15,6 +16,7 @@ import {
   Grid,
   Paper,
   Slide,
+  Stack,
   Toolbar,
   Typography,
   styled,
@@ -28,6 +30,7 @@ const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
   padding: theme.spacing(1),
+  margin: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
@@ -109,7 +112,7 @@ function FormRow() {
                   color="text.secondary"
                   component="div"
                 >
-                  launched  
+                  launched
                 </Typography>
               </CardContent>
             </Box>
@@ -174,7 +177,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <>
+    <Container maxWidth="full">
       <Box sx={{ flexGrow: 1, width: "100%" }}>
         <AppBar position="static">
           <Toolbar>
@@ -190,22 +193,52 @@ const Dashboard = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={1}>
-          <Grid container item spacing={3}>
-            <FormRow />
+      <Stack>
+        <div id="btnContainer">
+          <button className="btn" onClick="listView()">
+            <i className="fa fa-bars"></i> List
+          </button>
+          <button className="btn active" onClick="gridView()">
+            <i className="fa fa-th-large"></i> Grid
+          </button>
+        </div>
+        <Box sx={{ flexGrow: 1, width: "100%" }}>
+          <Grid spacing={2} margin={2}>
+            <Grid
+              container
+              item
+              spacing={1}
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <FormRow />
+            </Grid>
+            <Grid
+              container
+              item
+              spacing={1}
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <FormRow />
+            </Grid>
+            <Grid
+              container
+              item
+              spacing={1}
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <FormRow />
+            </Grid>
+            <Grid
+              container
+              item
+              spacing={1}
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <FormRow />
+            </Grid>
           </Grid>
-          <Grid container item spacing={3}>
-            <FormRow />
-          </Grid>
-          <Grid container item spacing={3}>
-            <FormRow />
-          </Grid>
-          <Grid container item spacing={3}>
-            <FormRow />
-          </Grid>
-        </Grid>
-      </Box>
+        </Box>
+      </Stack>
       <React.Fragment>
         <Dialog
           open={open}
@@ -226,7 +259,7 @@ const Dashboard = () => {
           </DialogActions>
         </Dialog>
       </React.Fragment>
-    </>
+    </Container>
   );
 };
 

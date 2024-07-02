@@ -35,11 +35,135 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const ListItem = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  margin: theme.spacing(1),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
+
 function FormRow() {
   return (
+      <React.Fragment>
+        <Grid item xs={3}>
+          <Item>
+            {" "}
+            <Card sx={{ display: "flex" }}>
+              <CardMedia
+                component="img"
+                sx={{ width: 151 }}
+                image="../../public/img/download.jpeg"
+                alt="Live from space album cover"
+              />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <CardContent sx={{ flex: "1 0 auto" }}>
+                  <Typography component="div" variant="h5">
+                    iphone 14
+                  </Typography>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    launched
+                  </Typography>
+                </CardContent>
+              </Box>
+            </Card>
+          </Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>
+            {" "}
+            <Card sx={{ display: "flex" }}>
+              <CardMedia
+                component="img"
+                sx={{ width: 151 }}
+                image="../../public/img/download.jpeg"
+                alt="Live from space album cover"
+              />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <CardContent sx={{ flex: "1 0 auto" }}>
+                  <Typography component="div" variant="h5">
+                    iphone 14
+                  </Typography>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    launched
+                  </Typography>
+                </CardContent>
+              </Box>
+            </Card>
+          </Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>
+            {" "}
+            <Card sx={{ display: "flex" }}>
+              <CardMedia
+                component="img"
+                sx={{ width: 151 }}
+                image="../../public/img/download.jpeg"
+                alt="Live from space album cover"
+              />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <CardContent sx={{ flex: "1 0 auto" }}>
+                  <Typography component="div" variant="h5">
+                    iphone 14
+                  </Typography>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    launched
+                  </Typography>
+                </CardContent>
+              </Box>
+            </Card>
+          </Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>
+            {" "}
+            <Card sx={{ display: "flex" }}>
+              <CardMedia
+                component="img"
+                sx={{ width: 151 }}
+                image="../../public/img/download.jpeg"
+                alt="Live from space album cover"
+              />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <CardContent sx={{ flex: "1 0 auto" }}>
+                  <Typography component="div" variant="h5">
+                    iphone 14
+                  </Typography>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    launched
+                  </Typography>
+                </CardContent>
+              </Box>
+            </Card>
+          </Item>
+        </Grid>
+      </React.Fragment>
+  );
+}
+
+function FormListRow() {
+  return (
     <React.Fragment>
-      <Grid item xs={3}>
-        <Item>
+      <Grid listItem xs={0}>
+        <ListItem>
           {" "}
           <Card sx={{ display: "flex" }}>
             <CardMedia
@@ -49,7 +173,7 @@ function FormRow() {
               alt="Live from space album cover"
             />
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
+              <CardContent sx={{ flex: "1 0 auto", marginLeft: 80 }}>
                 <Typography component="div" variant="h5">
                   iphone 14
                 </Typography>
@@ -63,10 +187,10 @@ function FormRow() {
               </CardContent>
             </Box>
           </Card>
-        </Item>
+        </ListItem>
       </Grid>
-      <Grid item xs={3}>
-        <Item>
+      <Grid listItem xs={0}>
+        <ListItem>
           {" "}
           <Card sx={{ display: "flex" }}>
             <CardMedia
@@ -76,7 +200,7 @@ function FormRow() {
               alt="Live from space album cover"
             />
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
+              <CardContent sx={{ flex: "1 0 auto", marginLeft: 80 }}>
                 <Typography component="div" variant="h5">
                   iphone 14
                 </Typography>
@@ -90,10 +214,10 @@ function FormRow() {
               </CardContent>
             </Box>
           </Card>
-        </Item>
+        </ListItem>
       </Grid>
-      <Grid item xs={3}>
-        <Item>
+      <Grid listItem xs={0}>
+        <ListItem>
           {" "}
           <Card sx={{ display: "flex" }}>
             <CardMedia
@@ -103,7 +227,7 @@ function FormRow() {
               alt="Live from space album cover"
             />
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
+              <CardContent sx={{ flex: "1 0 auto", marginLeft: 80 }}>
                 <Typography component="div" variant="h5">
                   iphone 14
                 </Typography>
@@ -117,10 +241,10 @@ function FormRow() {
               </CardContent>
             </Box>
           </Card>
-        </Item>
+        </ListItem>
       </Grid>
-      <Grid item xs={3}>
-        <Item>
+      <Grid listItem xs={0}>
+        <ListItem>
           {" "}
           <Card sx={{ display: "flex" }}>
             <CardMedia
@@ -130,7 +254,7 @@ function FormRow() {
               alt="Live from space album cover"
             />
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
+              <CardContent sx={{ flex: "1 0 auto", marginLeft: 80 }}>
                 <Typography component="div" variant="h5">
                   iphone 14
                 </Typography>
@@ -144,7 +268,7 @@ function FormRow() {
               </CardContent>
             </Box>
           </Card>
-        </Item>
+        </ListItem>
       </Grid>
     </React.Fragment>
   );
@@ -152,6 +276,7 @@ function FormRow() {
 
 const Dashboard = () => {
   const [userData, setUserData] = useState();
+  const [userViwe, setUserviwe] = useState(0);
   const [open, setOpen] = useState(false);
   const login_redirect = useNavigate();
 
@@ -176,6 +301,15 @@ const Dashboard = () => {
     setUserData(data[0].first_name);
   }, []);
 
+  const listView = () => {
+    console.log("LLL");
+    setUserviwe(1);
+  };
+
+  const gridView = () => {
+    setUserviwe(0);
+  };
+
   return (
     <Container maxWidth="full">
       <Box sx={{ flexGrow: 1, width: "100%" }}>
@@ -194,50 +328,81 @@ const Dashboard = () => {
         </AppBar>
       </Box>
       <Stack>
-        <div id="btnContainer">
-          <button className="btn" onClick="listView()">
-            <i className="fa fa-bars"></i> List
-          </button>
-          <button className="btn active" onClick="gridView()">
-            <i className="fa fa-th-large"></i> Grid
-          </button>
-        </div>
-        <Box sx={{ flexGrow: 1, width: "100%" }}>
-          <Grid spacing={2} margin={2}>
-            <Grid
-              container
-              item
-              spacing={1}
-              sx={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <FormRow />
-            </Grid>
-            <Grid
-              container
-              item
-              spacing={1}
-              sx={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <FormRow />
-            </Grid>
-            <Grid
-              container
-              item
-              spacing={1}
-              sx={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <FormRow />
-            </Grid>
-            <Grid
-              container
-              item
-              spacing={1}
-              sx={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <FormRow />
-            </Grid>
-          </Grid>
-        </Box>
+        {userViwe === 0 ? (
+          <>
+            <div id="btnContainer">
+              <button className="btn active" onClick={gridView}>
+                <i className="fa fa-th-large"></i> Grid
+              </button>
+              <button className="btn active" onClick={listView}>
+                <i className="fa fa-bars"></i> List
+              </button>
+            </div>
+            <Box sx={{ flexGrow: 1, width: "100%" }}>
+              <Grid spacing={2} margin={2}>
+                <Grid
+                  container
+                  item
+                  spacing={1}
+                  sx={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <FormRow />
+                </Grid>
+                <Grid
+                  container
+                  item
+                  spacing={1}
+                  sx={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <FormRow />
+                </Grid>
+                <Grid
+                  container
+                  item
+                  spacing={1}
+                  sx={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <FormRow />
+                </Grid>
+                <Grid
+                  container
+                  item
+                  spacing={1}
+                  sx={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <FormRow />
+                </Grid>
+              </Grid>
+            </Box>
+          </>
+        ) : (
+          <>
+            <div id="btnContainer">
+              <button className="btn active" onClick={gridView}>
+                <i className="fa fa-th-large"></i> Grid
+              </button>
+              <button className="btn active" onClick={listView}>
+                <i className="fa fa-bars"></i> List
+              </button>
+            </div>
+            <Box sx={{ flexGrow: 1, width: "100%" }}>
+              <Grid spacing={2} margin={2}>
+                <Grid container listItem spacing={1} sx={{ display: "block" }}>
+                  <FormListRow />
+                </Grid>
+                <Grid container listItem spacing={1} sx={{ display: "block" }}>
+                  <FormListRow />
+                </Grid>
+                <Grid container listItem spacing={1} sx={{ display: "block" }}>
+                  <FormListRow />
+                </Grid>
+                <Grid container listItem spacing={1} sx={{ display: "block" }}>
+                  <FormListRow />
+                </Grid>
+              </Grid>
+            </Box>
+          </>
+        )}
       </Stack>
       <React.Fragment>
         <Dialog

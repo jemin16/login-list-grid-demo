@@ -46,116 +46,116 @@ const ListItem = styled(Paper)(({ theme }) => ({
 
 function FormRow() {
   return (
-      <React.Fragment>
-        <Grid item xs={3}>
-          <Item>
-            {" "}
-            <Card sx={{ display: "flex" }}>
-              <CardMedia
-                component="img"
-                sx={{ width: 151 }}
-                image="../../public/img/download.jpeg"
-                alt="Live from space album cover"
-              />
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Typography component="div" variant="h5">
-                    iphone 14
-                  </Typography>
-                  <Typography
-                    variant="subtitle1"
-                    color="text.secondary"
-                    component="div"
-                  >
-                    launched
-                  </Typography>
-                </CardContent>
-              </Box>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            {" "}
-            <Card sx={{ display: "flex" }}>
-              <CardMedia
-                component="img"
-                sx={{ width: 151 }}
-                image="../../public/img/download.jpeg"
-                alt="Live from space album cover"
-              />
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Typography component="div" variant="h5">
-                    iphone 14
-                  </Typography>
-                  <Typography
-                    variant="subtitle1"
-                    color="text.secondary"
-                    component="div"
-                  >
-                    launched
-                  </Typography>
-                </CardContent>
-              </Box>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            {" "}
-            <Card sx={{ display: "flex" }}>
-              <CardMedia
-                component="img"
-                sx={{ width: 151 }}
-                image="../../public/img/download.jpeg"
-                alt="Live from space album cover"
-              />
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Typography component="div" variant="h5">
-                    iphone 14
-                  </Typography>
-                  <Typography
-                    variant="subtitle1"
-                    color="text.secondary"
-                    component="div"
-                  >
-                    launched
-                  </Typography>
-                </CardContent>
-              </Box>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            {" "}
-            <Card sx={{ display: "flex" }}>
-              <CardMedia
-                component="img"
-                sx={{ width: 151 }}
-                image="../../public/img/download.jpeg"
-                alt="Live from space album cover"
-              />
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Typography component="div" variant="h5">
-                    iphone 14
-                  </Typography>
-                  <Typography
-                    variant="subtitle1"
-                    color="text.secondary"
-                    component="div"
-                  >
-                    launched
-                  </Typography>
-                </CardContent>
-              </Box>
-            </Card>
-          </Item>
-        </Grid>
-      </React.Fragment>
+    <React.Fragment>
+      <Grid item lg={3} md={6} sm={12} xs={12}>
+        <Item>
+          {" "}
+          <Card sx={{ display: "flex" }}>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image="../../public/img/download.jpeg"
+              alt="Live from space album cover"
+            />
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  iphone 14
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  launched
+                </Typography>
+              </CardContent>
+            </Box>
+          </Card>
+        </Item>
+      </Grid>
+      <Grid item lg={3} md={6} sm={12} xs={12}>
+        <Item>
+          {" "}
+          <Card sx={{ display: "flex" }}>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image="../../public/img/download.jpeg"
+              alt="Live from space album cover"
+            />
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  iphone 14
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  launched
+                </Typography>
+              </CardContent>
+            </Box>
+          </Card>
+        </Item>
+      </Grid>
+      <Grid item  lg={3} md={6} sm={12} xs={12}>
+        <Item>
+          {" "}
+          <Card sx={{ display: "flex" }}>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image="../../public/img/download.jpeg"
+              alt="Live from space album cover"
+            />
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  iphone 14
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  launched
+                </Typography>
+              </CardContent>
+            </Box>
+          </Card>
+        </Item>
+      </Grid>
+      <Grid item lg={3} md={6} sm={12} xs={12}>
+        <Item>
+          {" "}
+          <Card sx={{ display: "flex" }}>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image="../../public/img/download.jpeg"
+              alt="Live from space album cover"
+            />
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  iphone 14
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  launched
+                </Typography>
+              </CardContent>
+            </Box>
+          </Card>
+        </Item>
+      </Grid>
+    </React.Fragment>
   );
 }
 
